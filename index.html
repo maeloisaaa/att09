@@ -86,13 +86,13 @@
 
             <div class="screenshot">
                 <p><strong>Nível Desafiador 2 (Exemplo, supondo um nível):</strong></p>
-                <img src="print2.png" alt="Flexbox Froggy Level X Screenshot">
+                <img src="img/print2.png" alt="Flexbox Froggy Level X Screenshot">
                 <p><strong>Motivo:</strong> Um nível que exigiu o uso de `justify-content: space-around;` foi particularmente útil. Entender como distribuir o espaço uniformemente ao redor dos itens, em vez de apenas entre eles, é uma propriedade poderosa para o alinhamento de elementos em um layout, como um menu de navegação com espaçamento igual entre os itens.</p>
             </div>
 
             <div class="screenshot">
                 <p><strong>Nível Desafiador 3 (Exemplo, supondo um nível):</strong></p>
-                <img src="print3.png" alt="Flexbox Froggy Level Y Screenshot">
+                <img src="img/print3.png" alt="Flexbox Froggy Level Y Screenshot">
                 <p><strong>Motivo:</strong> Um nível que forçou o uso de `align-items: flex-end;`para alinhar os itens ao final do contêiner transversalmente foi um bom desafio. Isso me fez pensar sobre o eixo cruzado do Flexbox e como o alinhamento funciona em relação a ele, o que é fundamental para layouts que exigem alinhamento vertical ou horizontal específico, dependendo da direção do flex.</p>
             </div>
         </div>
@@ -102,19 +102,19 @@
 
             <div class="screenshot">
                 <p><strong>Nível Desafiador 1 (Exemplo, supondo um nível):</strong></p>
-                <img src="print4.png" alt="Flexbox Zombies Level A Screenshot">
-                [cite_start]<p><strong>Motivo:</strong> Um nível que me exigiu combinar `flex-direction: column;` [cite: 24] [cite_start]com `justify-content: flex-start;` ou `flex-end;` para posicionar os "heróis" precisamente foi um desafio interessante. [cite: 30] Isso me ajudou a internalizar como a mudança da direção do flex afeta a forma como `justify-content` e `align-items` se comportam, o que é crucial para layouts bidimensionais.</p>
+                <img src="img/print4.png" alt="Flexbox Zombies Level A Screenshot">
+                <p><strong>Motivo:</strong> Um nível que me exigiu combinar `flex-direction: column;` [cite: 24] [cite_start]com `justify-content: flex-start;` ou `flex-end;` para posicionar os "heróis" precisamente foi um desafio interessante. [cite: 30] Isso me ajudou a internalizar como a mudança da direção do flex afeta a forma como `justify-content` e `align-items` se comportam, o que é crucial para layouts bidimensionais.</p>
             </div>
 
             <div class="screenshot">
                 <p><strong>Nível Desafiador 2 (Exemplo, supondo um nível):</strong></p>
-                <img src="print5" alt="Flexbox Zombies Level B Screenshot">
+                <img src="img/print5" alt="Flexbox Zombies Level B Screenshot">
                 <p><strong>Motivo:</strong> Níveis que envolviam o uso de `order` para reordenar elementos dentro do flex container foram bastante reveladores. Embora não tenha sido diretamente demonstrado nas imagens fornecidas, a capacidade de controlar a ordem visual independentemente da ordem do código HTML é uma ferramenta poderosa para a responsividade e a acessibilidade, e o Flexbox Zombies apresentou cenários onde isso era essencial.</p>
             </div>
 
             <div class="screenshot">
                 <p><strong>Nível Desafiador 3 (Exemplo, supondo um nível):</strong></p>
-                <img src="print6" alt="Flexbox Zombies Level C Screenshot">
+                <img src="img/print6" alt="Flexbox Zombies Level C Screenshot">
                 <p><strong>Motivo:</strong> Um desafio que exigia o uso de `align-self` para alinhar um item individualmente dentro de um contêiner flexível, ignorando o `align-items` global, foi particularmente instrutivo. Isso me mostrou a granularidade do controle que o Flexbox oferece, permitindo ajustes finos no layout para elementos específicos, o que é útil para designs complexos.</p>
             </div>
         </div>
@@ -124,7 +124,7 @@
         <h3>Propriedades CSS Utilizadas e Suas Funções</h3>
         <ul>
             <li>`display: flex;`: Define um contêiner flexível, habilitando todas as propriedades Flexbox para seus filhos diretos (itens flex).</li>
-            [cite_start]<li>`flex-direction`: Define a direção em que os itens flex são colocados no contêiner flexível (linha, coluna, e suas inversões). [cite: 14, 24]
+            <li>`flex-direction`: Define a direção em que os itens flex são colocados no contêiner flexível (linha, coluna, e suas inversões).
                 <ul>
                     <li>`row`: Itens são organizados da esquerda para a direita (padrão).</li>
                     <li>`row-reverse`: Itens são organizados da direita para a esquerda.</li>
@@ -169,7 +169,7 @@
         <ol>
             <li><strong>Contêiner do Menu:</strong> O elemento `nav` ou `ul` que agrupa os itens do menu seria o nosso contêiner flex. Aplicaríamos `display: flex;` a ele.</li>
             <li><strong>Layout Padrão (Desktop):</strong> Para telas maiores, usaríamos `flex-direction: row;` para que os itens do menu fiquem lado a lado horizontalmente. [cite_start]Para distribuir o espaço e alinhar os itens, poderíamos usar `justify-content: space-around;`ou `space-between;` para que os links fiquem bem distribuídos ao longo da largura do menu. `align-items: center;` garantiria que todos os itens do menu estivessem verticalmente alinhados no centro, independentemente do seu tamanho de conteúdo.</li>
-            <li><strong>Responsividade (Mobile):</strong> Ao redimensionar a tela para um dispositivo móvel (usando Media Queries), poderíamos mudar a propriedade `flex-direction` para `column;`[cite: 24]. Isso faria com que os itens do menu se empilhassem verticalmente, um abaixo do outro. Para centralizar esses itens verticalmente no eixo principal (agora vertical), usaríamos `justify-content: center;` e para centralizá-los horizontalmente no eixo transversal (agora horizontal), usaríamos `align-items: center;`.</li>
+            <li><strong>Responsividade (Mobile):</strong> Ao redimensionar a tela para um dispositivo móvel (usando Media Queries), poderíamos mudar a propriedade `flex-direction` para `column;`. Isso faria com que os itens do menu se empilhassem verticalmente, um abaixo do outro. Para centralizar esses itens verticalmente no eixo principal (agora vertical), usaríamos `justify-content: center;` e para centralizá-los horizontalmente no eixo transversal (agora horizontal), usaríamos `align-items: center;`.</li>
             <li><strong>Espaçamento e Alinhamento:</strong> Poderíamos usar a propriedade `gap` para adicionar espaçamento entre os itens do menu, tanto horizontalmente (em desktop) quanto verticalmente (em mobile), garantindo que não fiquem grudados.</li>
             <li><strong>Itens Específicos:</strong> Se houvesse um item de menu especial (como um botão de "Login" ou "Carrinho"), poderíamos usar `align-self` nesse item específico para sobrescrever o alinhamento geral do `align-items`, talvez para que ele se alinhe ao final do contêiner enquanto os outros itens permanecem centralizados.</li>
         </ol>
